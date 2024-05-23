@@ -30,10 +30,18 @@ jobs:
       run: |
         pytest --junitxml=results.xml
       continue-on-error: true
+<<<<<<< HEAD
 
     - name: Archive test results
       uses: actions/upload-artifact@v2
       with:
         name: test-results
         path: results.xml
+=======
+>>>>>>> 7bf30b8d3af567f3f743b52398331ffb1596416b
 
+    - name: Archive test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-results
+        path: results.xml
